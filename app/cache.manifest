@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# REF 1
+css/font-awesome.min.css
+css/main.css
+
+fonts/FontAwesome.otf
+fonts/fontawesome-webfont.eot
+fonts/fontawesome-webfont.svg
+fonts/fontawesome-webfont.ttf
+fonts/fontawesome-webfont.woff
+
+vendor/angular/angular.js
+vendor/angular/i18n/angular-locale_de-de.js
+vendor/angular-bootstrap/ui-bootstrap-tpls.min.js
+vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js
+vendor/angular-ui-router/release/angular-ui-router.js
+app/products.js
+app/app.js
