@@ -298,6 +298,18 @@ module.exports = function (grunt) {
       }
     },
 
+    //rewrite some html
+    processhtml: {
+      options: {
+        commentMarker: 'process',
+      },
+      dist: {
+        files: {
+          '<%= yeoman.dist %>/index.html': ['<%= yeoman.dist %>/index.html']
+        }
+      }
+    },
+
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
@@ -397,6 +409,7 @@ module.exports = function (grunt) {
     'concat',
     'ngmin',
     'copy:dist',
+    'processhtml',
     'cdnify',
     'cssmin',
     'uglify',
