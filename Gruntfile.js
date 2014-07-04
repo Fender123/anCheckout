@@ -358,7 +358,8 @@ module.exports = function (grunt) {
       generate: {
         options: {
           basePath: '<%= yeoman.dist %>/',
-          hash: true
+          hash: true,
+          fallback: ['/ /offline.html']
         },
         src: [
           '*.html',
