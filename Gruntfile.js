@@ -337,13 +337,40 @@ module.exports = function (grunt) {
           cwd: 'bower_components/bootstrap/dist',
           src: 'fonts/*',
           dest: '<%= yeoman.dist %>'
-        }]
+        }, {
+          expand: true,
+          cwd: 'bower_components/fontawesome',
+          src: 'fonts/*',
+          dest: '<%= yeoman.dist %>'
+        }
+        ]
       },
       styles: {
         expand: true,
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      }
+    },
+
+    //Generate html5 cache manifest file
+    manifest: {
+      generate: {
+        options: {
+          basePath: '<%= yeoman.dist %>/',
+          hash: true
+        },
+        src: [
+          '*.html',
+          'favicon.ico',
+          'fonts/*',
+          'images/*',
+          'scripts/*.js',
+          'styles/*',
+          'views/*'
+        ],
+        dest: '<%= yeoman.dist %>/cache.manifest',
+
       }
     },
 
@@ -415,7 +442,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'manifest'
   ]);
 
   grunt.registerTask('default', [
