@@ -13,14 +13,14 @@ describe('Filter: formatList', function () {
   }));
 
 	it('text should not contain a comma', function(){
-		var input = "test";
-		var expected = "test";
+		var input = 'test';
+		var expected = 'test';
 		expect(formatList(input)).toEqual(expected);
 	});
 
 	it('text should contain a comma with a leading blank', function(){
-		var input = "test,test2";
-		var expected = "test, test2";
+		var input = 'test,test2';
+		var expected = 'test, test2';
 		expect(formatList(input)).toEqual(expected);
 	});
 });
