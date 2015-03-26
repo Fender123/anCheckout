@@ -162,9 +162,9 @@ module.exports = function (grunt) {
 
     // Automatically inject Bower components into the app
     wiredep: {
-      options: {
+      /*options: {
         cwd: '<%= yeoman.app %>'
-      },
+      },*/
       app: {
         src: ['<%= yeoman.app %>/index.html'],
         ignorePath:  /\.\.\//
@@ -359,7 +359,7 @@ module.exports = function (grunt) {
         options: {
           basePath: '<%= yeoman.dist %>/',
           hash: true,
-          fallback: ['/ /offline.html']
+          fallback: ['/ offline.html']
         },
         src: [
           '*.html',
