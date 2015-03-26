@@ -39,7 +39,7 @@ describe('Filter: orderObjectBy', function () {
 				b: 2
 			}
 		];
-		expect(orderObjectBy(input, "a")).toEqual(expected);
+		expect(orderObjectBy(input, 'a')).toEqual(expected);
 	});
 
 	it('object should be sorted the right way (reversed)', function(){
@@ -69,6 +69,6 @@ describe('Filter: orderObjectBy', function () {
 				c: 4
 			}
 		];
-		expect(orderObjectBy(input, "a", true)).toEqual(expected);
+		expect(orderObjectBy(input, 'a', true)).toEqual(expected);
 	});
 });
