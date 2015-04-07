@@ -62,8 +62,16 @@ h2 {
 }
 .products .product .price {
   font-size: 0.9em;
-  font-style: italic;
   padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  padding: 5px 0;
+  background: rgba(255,255,255,0.6);
+  line-height: 18px;
+  color: #333;
 }
 .cart{
   margin-top: 15px;
