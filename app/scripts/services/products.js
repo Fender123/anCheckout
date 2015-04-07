@@ -3,7 +3,7 @@
 (function(){
 	var products = [
 		  {
-		    "name": "Fleischbrot,Salat,WeiÃŸwÃ¼rste",
+		    "name": "Fleischbrot,Salat,Weißwürste",
 		    "price": 4.30,
 		    "color": "#66CCFF",
 		    "group": "Essen"
@@ -21,7 +21,7 @@
 		    "group": "Essen"
 		  },
 		  {
-		    "name": "1/2 HÃ¤hnchen",
+		    "name": "1/2 Hähnchen",
 		    "price": 5.90,
 		    "color": "#CCFF99",
 		    "group": "Essen"
@@ -57,7 +57,7 @@
 		    "group": "Essen"
 		  },
 		  {
-		    "name": "Currywurst,Wilde Kartoffeln,KÃ¤se,Hering",
+		    "name": "Currywurst,Wilde Kartoffeln,Käse,Hering",
 		    "price": 2.80,
 		    "color": "#00BD00",
 		    "group": "Essen"
