@@ -12,7 +12,7 @@ angular.module('anCheckoutApp')
     $scope.cart = cart;
 
     //Init products
-    var prds = products.products;
+    var prds = products.getProducts();
     $scope.products = prds;
     $scope.activeTab = products.firstGroup || 'Andere';
 

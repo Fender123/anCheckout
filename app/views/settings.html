@@ -1,0 +1,29 @@
+<div class="row settings">
+	<div class="col-md-8">
+		<div class="group" ng-repeat="group in products" ui-sortable ng-model="group.products">
+			<div style="background-color:{{product.color}};" class="product" ng-repeat="product in group.products" ng-tap="edit(product)">
+				<span class="name">{{ product.name }}</span>
+				<span class="price">{{ product.price | currency }}</span>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<span class="btn btn-primary" ng-tap="save()">Änderungen speichern</span>
+		<span class="btn btn-danger" ng-tap="reset()">Alle Änderungen verwerfen</span>
+	</div>
+	<div class="col-md-4">
+		<form action="#">
+			<div class="form-group">
+				<label for="prdName">Name</label>
+				<input id="prdName" class="form-control" type="text" ng-model="editedProduct.name">
+			</div>
+			<div class="form-group">
+				<label for="prdPrice">Preis</label>
+				<input id="prdPrice" class="form-control" type="text" ng-model="editedProduct.price">
+			</div>
+			<div class="form-group">
+				<label for="prdColor">Farbe</label>
+				<input id="prdName" class="form-control" type="text" ng-model="editedProduct.color" style="background-color:{{editedProduct.color}};">
+			</div>
+		</form>
+	</div>
+</div>
