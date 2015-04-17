@@ -102,16 +102,16 @@
 				//Try to load products form localStorage
 			    var savePrds = localStorage.getItem(STORAGE_KEY);
 			    if(savePrds){
-			        return JSON.parse(savePrds);
+			        return angular.fromJson(savePrds);
 			    }
-			    return prds;
+			    return angular.fromJson(angular.toJson(prds));
 	    	},
 	    	firstGroup: products[0].group,
 	    	resetProducts: function(){
 	    		localStorage.removeItem(STORAGE_KEY);
 	    	},
 	    	saveProducts: function(newPrds){
-		        localStorage.setItem(STORAGE_KEY, JSON.stringify(newPrds));
+		        localStorage.setItem(STORAGE_KEY, angular.toJson(newPrds));
 	    	}
 	    };
 	});
