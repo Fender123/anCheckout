@@ -13,7 +13,8 @@ angular.module('anCheckoutApp')
     //Init products
     var prds = products.getProducts();
     $scope.products = prds;
-	$scope.editedProduct = null;
+    $scope.editedProduct = null;
+    $scope.editedProductBackup = null;
     $scope.productsImportExport = '';
 
     $scope.save = function(){
@@ -25,6 +26,7 @@ angular.module('anCheckoutApp')
         prds = products.getProducts();
         $scope.products = prds;
         $scope.editedProduct = null;
+        $scope.editedProductBackup = null;
     };
 
     $scope.edit = function(product){
