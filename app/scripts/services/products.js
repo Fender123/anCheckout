@@ -6,74 +6,74 @@
 	var products = [
 		  {
 		    'name': 'Fleischbrot,Salat,Weißwürste',
-		    'price': 4.30,
-		    'color': '#66CCFF',
+		    'price': 4.50,
+		    'color': '#FFFF00',
 		    'group': 'Essen'
 		  },
 		  {
 		    'name': 'Pommes,Rettich',
-		    'price': 2.30,
-		    'color': '#FCDCC2',
+		    'price': 2.50,
+		    'color': '#FF9933',
 		    'group': 'Essen'
 		  },
 		  {
 		    'name': '1/2l Bier,1/4l Wein',
 		    'price': 3.30,
-		    'color': '#FFABAB',
+		    'color': '#00BD00',
 		    'group': 'Essen'
 		  },
 		  {
 		    'name': '1/2 Hähnchen',
-		    'price': 5.90,
-		    'color': '#CCFF99',
+		    'price': 6.00,
+		    'color': '#FFFFFF',
 		    'group': 'Essen'
 		  },
 		  {
-		    'name': 'Wurst',
-		    'price': 2.50,
-		    'color': '#FF9933',
+		    'name': 'Wurst,Hering',
+		    'price': 2.70,
+		    'color': '#66CCFF',
 		    'group': 'Essen'
 		  },
 		  {
 		    'name': '1l Bier',
 		    'price': 6.40,
-		    'color': '#FFFF00',
+		    'color': '#CCFF99',
 		    'group': 'Essen'
 		  },
 		  {
 		    'name': 'Haxen',
 		    'price': 6.90,
-		    'color': '#FFFFFF',
+		    'color': '#FF3333',
 		    'group': 'Essen'
 		  },
 		  {
 		    'name': 'LKW',
 		    'price': 3.30,
+		    'color': '#FCDCC2',
+		    'group': 'Essen'
+		  },
+		  {
+		    'name': 'Schorle,Pils',
+		    'price': 2.90,
 		    'color': '#FFABAB',
 		    'group': 'Essen'
 		  },
 		  {
-		    'name': 'Schorle',
-		    'price': 2.80,
-		    'color': '#00BD00',
-		    'group': 'Essen'
-		  },
-		  {
 		    'name': 'Currywurst,Wilde Kartoffeln,Käse,Hering',
-		    'price': 2.80,
-		    'color': '#00BD00',
+		    'price': 2.90,
+		    'color': '#FFABAB',
 		    'group': 'Essen'
 		  },
 		  {
 		    'name': 'Sprudel,A-Schorle,Cola,Fanta',
-		    'price': 2.50,
-		    'color': '#FF9933',
+		    'price': 2.70,
+		    'color': '#66CCFF',
 		    'group': 'Essen'
 		  },
 		  {
 		    'name': 'Pfand',
 		    'price': 2.00,
-		    'color': '#FF3333',
+		    'color': '#FFFF00',
 		    'group': 'Essen'
 		  }
 		];
