@@ -1,7 +1,6 @@
 {
   "name": "ancheckout",
   "version": "0.0.0",
-  "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^0.7.3",
@@ -29,9 +28,9 @@
     "jshint-stylish": "^0.2.0",
     "karma": "*",
     "karma-jasmine": "*",
-    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-phantomjs-launcher": "~1.0.0",
     "load-grunt-tasks": "^0.4.0",
-    "phantomjs": "^2.1",
+    "phantomjs": "^2.1.3",
     "time-grunt": "*"
   },
   "engines": {
