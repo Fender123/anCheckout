@@ -59,7 +59,7 @@
 		    'group': 'Essen'
 		  },
 		  {
-		    'name': 'Currywurst,Wilde Kartoffeln,Käse,Hering',
+		    'name': 'Currywurst,Wilde Kartoffeln,Käse',
 		    'price': 2.90,
 		    'color': '#FFABAB',
 		    'group': 'Essen'
