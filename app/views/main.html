@@ -5,7 +5,7 @@
     </ul>
     <div class="tab-content">
       <div ng-repeat="(groupName, group) in products" ng-if="group.name" ng-attr-class="{{activeTab === groupName && 'tab-pane active' || 'tab-pane'}}" id="{{groupName}}" ng-show="activeTab === groupName">
-        <div style="background-color:{{product.color}};" class="product" ng-repeat="product in group.products" ng-tap="cart.buy(product)">
+        <div style="background-color:{{product.color}};" ng-attr-class="{{product.price > 0 && 'product' || 'product spacer'}}" ng-repeat="product in group.products" ng-tap="cart.buy(product)">
           <span class="name" ng-bind-html="formatName(product.name)"></span>
           <span class="price">{{ product.price | currency }}</span>
         </div>

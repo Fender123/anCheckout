@@ -25,9 +25,6 @@ h2 {
   -ms-user-select: none;
   user-select: none;
 }
-.row {
-  margin-top: 20px;
-}
 .products .tab-pane {
   padding-top: 15px;
 }
@@ -36,9 +33,8 @@ h2 {
     height: @boxHeight - 2 * @boxPaddingH;*/
   width: 30.333%;
   height: 130px;
-  padding: 10px 20px;
+  padding: 10px 20px 38px;
   text-align: center;
-  float: left;
   margin: 0 3%  20px 0;
   cursor: pointer;
   -webkit-touch-callout: none;
@@ -50,6 +46,14 @@ h2 {
   border: 2px solid #666;
   border-radius: 3px;
   position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.products .product.spacer{
+  pointer-events: none;
+  opacity: 0;
 }
 .products .product .name,
 .products .product .price {
@@ -62,7 +66,6 @@ h2 {
 }
 .products .product .price {
   font-size: 0.9em;
-  padding-top: 10px;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -89,7 +92,6 @@ h2 {
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -134,8 +136,11 @@ h2 {
 }
 
 .tab-content .tab-pane{
-  max-height: 657px;
+  height: 712px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
 }
 
 .tools{
